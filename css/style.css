@@ -10,17 +10,19 @@ table {
     margin:20px auto;
     border-collapse:collapse;
 }
-button {
-    margin:50px 40%;
-    padding:7px;
+div {
+    margin:50px auto;
+    padding:10px;
     border-radius:10px;
     background-color:green;
+    width:200px;
+    text-align:center;
 }
 a {
     text-decoration:none;
     text-transform:uppercase;
 }
-button a {
+div a {
     color: white;
     font-weight:900;
     

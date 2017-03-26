@@ -72,11 +72,12 @@
            </fieldset>
            <fieldset>
                 <h3>І на закінчення вкажіть інформацію про себе</h3>
-               <p><label>Ім'я: <input type="text" name="name" placeholder="Тарас"></label></p>
-               <p><label>Вік: <input type="number" name="age" min="16" max="60"></label></p>
-               <label>Стать: <input type="radio" name="sex">Чоловіча</label>
+                <p>Поля з <span>*</span> обов'язкові для заповнення</p>
+               <p><label>Ім'я:<span>*</span> <input style="width:60%" required type="text" name="name" placeholder="Тарас"></label></p>
+               <p><label>Вік:<span>*</span> <input type="number" name="age" min="16" max="60" placeholder="20"></label></p>
+               <label>Стать:<span>*</span> <input type="radio" name="sex">Чоловіча</label>
                <label><input type="radio" name="sex">Жіноча</label>
-               <p><label>Email: <input type="email" name="email" placeholder="stopend@gmail.com"></label></p>
+               <p><label>Email:<span>*</span> <input type="email" name="email" placeholder="stopend@gmail.com"></label></p>
                <p><label>Улюблений колір: <input type="color" name="favcolor" value="#00ff00"></label></p>
                <p><label>Веб сторінка: <input type="url" name="website" placeholder="https://www.facebook.com"></label></p>
                </fieldset>

@@ -14,10 +14,10 @@
            <fieldset>
                <legend>1</legend>
                <h3>Ваше ставлення до соціальних мереж (ВКонтакте, Google+, Facebook, Twitter, Connect, Одноклассники, Мой Мир, та інших)?</h3>
-               <p><label><input type="radio" name="attitude">Позитивне</label></p>
-               <p><label><input type="radio" name="attitude">Негативне</label></p>
-               <p><label><input type="radio" name="attitude">Нейтральне</label></p>
-               <p><label><input type="radio" name="attitude">Свій варіант</label></p>
+               <p><label><input type="radio" name="attitude" value="positive">Позитивне</label></p>
+               <p><label><input type="radio" name="attitude" value="negative">Негативне</label></p>
+               <p><label><input type="radio" name="attitude" value="neutral">Нейтральне</label></p>
+               <p><label><input type="radio" name="attitude" value="other">Свій варіант</label></p>
                 <p><input type="text" name="other-01" placeholder="Введіть відповідь"></p>
            </fieldset>
            <fieldset>
@@ -61,23 +61,23 @@
            <fieldset>
                <legend>6</legend>
                <h3>Що для Вас є соціальні мережі (виберіть декілька відповідей)?</h3>
-               <p><label><input type="checkbox" name="vk">Засіб спілкування</label></p>
-               <p><label><input type="checkbox" name="facebook">Джерело цікавої інформації</label></p>
-               <p><label><input type="checkbox" name="od">Спосіб витрачання часу</label></p>
-               <p><label><input type="checkbox" name="none">Місце для розваг</label></p>
-               <p><label><input type="checkbox" name="none">Можливість познайомитись з новими людьми</label></p>
-               <p><label><input type="checkbox" name="none">Можливість самовираження</label></p>
+               <p><label><input type="checkbox" name="communication">Засіб спілкування</label></p>
+               <p><label><input type="checkbox" name="inf">Джерело цікавої інформації</label></p>
+               <p><label><input type="checkbox" name="time">Спосіб витрачання часу</label></p>
+               <p><label><input type="checkbox" name="entertainment">Місце для розваг</label></p>
+               <p><label><input type="checkbox" name="friends">Можливість познайомитись з новими людьми</label></p>
+               <p><label><input type="checkbox" name="self-expression">Можливість самовираження</label></p>
                <p><label><input type="checkbox" name="other">Свій варіант</label></p>
                <p><input type="text" name="other-06" placeholder="Введіть відповідь"></p>
            </fieldset>
            <fieldset>
                 <h3>І на закінчення вкажіть інформацію про себе</h3>
                 <p>Поля з <span>*</span> обов'язкові для заповнення</p>
-               <p><label>Ім'я:<span>*</span> <input style="width:60%" required type="text" name="name" placeholder="Тарас"></label></p>
-               <p><label>Вік:<span>*</span> <input type="number" name="age" min="16" max="60" placeholder="20"></label></p>
-               <label>Стать:<span>*</span> <input type="radio" name="sex">Чоловіча</label>
-               <label><input type="radio" name="sex">Жіноча</label>
-               <p><label>Email:<span>*</span> <input type="email" name="email" placeholder="stopend@gmail.com"></label></p>
+               <p><label>Ім'я:<span>*</span> <input required type="text" name="name" placeholder="Тарас"></label></p>
+               <p><label>Вік:<span>*</span> <input required type="number" name="age" min="16" max="60" placeholder="20"></label></p>
+               <label>Стать:<span>*</span> <input value="m" type="radio" name="sex" required>Чоловіча</label>
+               <label><input type="radio" value="w" name="sex" required>Жіноча</label>
+               <p><label>Email:<span>*</span> <input required type="email" name="email" placeholder="stopend@gmail.com"></label></p>
                <p><label>Улюблений колір: <input type="color" name="favcolor" value="#00ff00"></label></p>
                <p><label>Веб сторінка: <input type="url" name="website" placeholder="https://www.facebook.com"></label></p>
                </fieldset>

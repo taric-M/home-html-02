@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+<body>
+   <header>
+       <h1>Соціологічне дослідження: "Соціальні мережі - За і Проти"!!!</h1>
+       <p><b>Вітаю,</b><br>витратьте, будь ласка, кілька хвилин свого часу на заповнення наступної <b>анкети:</b></p>
+   </header>
+   <main>
+       <form method="POST" action="https://formspree.io/taras92.m@gmail.com">
+           <fieldset>
+               <legend>1</legend>
+               <h3>Ваше ставлення до соціальних мереж (ВКонтакте, Google+, Facebook, Twitter, Connect, Одноклассники, Мой Мир, та інших)?</h3>
+               <p><label><input type="radio" name="attitude">Позитивне</label></p>
+               <p><label><input type="radio" name="attitude">Негативне</label></p>
+               <p><label><input type="radio" name="attitude">Нейтральне</label></p>
+               <p><label><input type="radio" name="attitude">Свій варіант</label></p>
+                <p><input type="text" name="other-01" placeholder="Введіть відповідь"></p>
+           </fieldset>
+           <fieldset>
+               <legend>2</legend>
+               <h3>В яких соціальних мережах Ви зареєстровані або були зареєстровані (виберіть декілька відповідей)?</h3>
+               <p><label><input type="checkbox" name="vk">ВКонтакте</label></p>
+               <p><label><input type="checkbox" name="facebook">Facebook</label></p>
+               <p><label><input type="checkbox" name="od">Одноклассники</label></p>
+               <p><label><input type="checkbox" name="none">Не зареєстрований</label></p>
+               <p><label><input type="checkbox" name="other-02">Свій варіант</label></p>
+               <p><input type="text" name="other" placeholder="Введіть відповідь"></p>
+           </fieldset>
+           <fieldset>
+               <legend>3</legend>
+               <h3>Для пошуку інформації в Інтернеті, Ви найчастіше використовуєте?</h3>
+               <select name="search-еngines" multiple size="3">
+                   <option disabled>Виберіть пошукові системи</option>
+                   <option value="Google">Google</option>
+                   <option value="Yandex">Yandex</option>
+                   <option value="Bing">Bing</option>
+                   <option value="Yahoo">Yahoo</option>
+                   <option value="shukalka">shukalka</option>
+                   <option value="yottos">yottos</option>
+                   <option value="guugle">guugle</option>
+               </select>
+           </fieldset>
+           <fieldset>
+               <legend>4</legend>
+               <h3>Для передавання даних в Інтернеті Ви найчастіше використовуєте?</h3>
+               <select name="data-transfer">
+                   <option value="social-networks">Соціальні мережі</option>
+                   <option value="email">Електронну пошту</option>
+               </select>
+           </fieldset>
+           <fieldset>
+               <legend>5</legend>
+               <h3>Скільки часу щодня Ви проводите в усіх зареєстрованих соціальних мережах вцілому?</h3>
+               <label for="num">Вкажіть кількість годин</label>
+               <input id="num" type="number" name="quantity" min="0" max="24" placeholder="3">
+           </fieldset>
+           <fieldset>
+               <legend>6</legend>
+               <h3>Що для Вас є соціальні мережі (виберіть декілька відповідей)?</h3>
+               <p><label><input type="checkbox" name="vk">Засіб спілкування</label></p>
+               <p><label><input type="checkbox" name="facebook">Джерело цікавої інформації</label></p>
+               <p><label><input type="checkbox" name="od">Спосіб витрачання часу</label></p>
+               <p><label><input type="checkbox" name="none">Місце для розваг</label></p>
+               <p><label><input type="checkbox" name="none">Можливість познайомитись з новими людьми</label></p>
+               <p><label><input type="checkbox" name="none">Можливість самовираження</label></p>
+               <p><label><input type="checkbox" name="other">Свій варіант</label></p>
+               <p><input type="text" name="other-06" placeholder="Введіть відповідь"></p>
+           </fieldset>
+           <fieldset>
+                <h3>І на закінчення вкажіть інформацію про себе</h3>
+               <p><label>Ім'я: <input type="text" name="name" placeholder="Тарас"></label></p>
+               <p><label>Вік: <input type="number" name="age" min="16" max="60"></label></p>
+               <label>Стать: <input type="radio" name="sex">Чоловіча</label>
+               <label><input type="radio" name="sex">Жіноча</label>
+               <p><label>Email: <input type="email" name="email" placeholder="stopend@gmail.com"></label></p>
+               <p><label>Улюблений колір: <input type="color" name="favcolor" value="#00ff00"></label></p>
+               <p><label>Веб сторінка: <input type="url" name="website" placeholder="https://www.facebook.com"></label></p>
+               </fieldset>
+               <div>
+                   <input type="reset" name="reset">
+                   <input type="submit" name="submit">
+               </div> 
+       </form>
+   </main>
+</body>
+</html>

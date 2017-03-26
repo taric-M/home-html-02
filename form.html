@@ -14,13 +14,13 @@
    <main>
        <form method="POST" action="https://formspree.io/taras92.m@gmail.com">
            <fieldset>
-               
+               <legend>1</legend>
                <h3>Ваше ставлення до соціальних мереж (ВКонтакте, Google+, Facebook, Twitter, Connect, Одноклассники, Мой Мир, та інших)?</h3>
                <p><label><input type="radio" name="attitude" value="positive">Позитивне</label></p>
                <p><label><input type="radio" name="attitude" value="negative">Негативне</label></p>
                <p><label><input type="radio" name="attitude" value="neutral">Нейтральне</label></p>
                <p><label><input type="radio" name="attitude" value="other">Свій варіант</label></p>
-                <p><input type="text" name="other-01" placeholder="Введіть відповідь"></p>
+                <p><input class="other" type="text" name="other-01" placeholder="Введіть відповідь"></p>
            </fieldset>
            <fieldset>
                <legend>2</legend>
@@ -30,7 +30,7 @@
                <p><label><input type="checkbox" name="od">Одноклассники</label></p>
                <p><label><input type="checkbox" name="none">Не зареєстрований</label></p>
                <p><label><input type="checkbox" name="other-02">Свій варіант</label></p>
-               <p><input type="text" name="other" placeholder="Введіть відповідь"></p>
+               <p><input class="other" type="text" name="other" placeholder="Введіть відповідь"></p>
            </fieldset>
            <fieldset>
                <legend>3</legend>
@@ -50,15 +50,15 @@
                <legend>4</legend>
                <h3>Для передавання даних в Інтернеті Ви найчастіше використовуєте?</h3>
                <select name="data-transfer">
-                   <option value="social-networks">Соціальні мережі</option>
-                   <option value="email">Електронну пошту</option>
+                   <option class="big" value="social-networks">Соціальні мережі</option>
+                   <option class="big" value="email">Електронну пошту</option>
                </select>
            </fieldset>
            <fieldset>
                <legend>5</legend>
                <h3>Скільки часу щодня Ви проводите в усіх зареєстрованих соціальних мережах вцілому?</h3>
                <label for="num">Вкажіть кількість годин</label>
-               <input id="num" type="number" name="quantity" min="0" max="24" placeholder="3">
+               <input id="num" type="number" name="quantity" min="0" max="24" placeholder="3" class="big">
            </fieldset>
            <fieldset>
                <legend>6</legend>
@@ -70,24 +70,32 @@
                <p><label><input type="checkbox" name="friends">Можливість познайомитись з новими людьми</label></p>
                <p><label><input type="checkbox" name="self-expression">Можливість самовираження</label></p>
                <p><label><input type="checkbox" name="other">Свій варіант</label></p>
-               <p><input type="text" name="other-06" placeholder="Введіть відповідь"></p>
+               <p><input class="other" type="text" name="other-06" placeholder="Введіть відповідь"></p>
            </fieldset>
            <fieldset>
                 <h3>І на закінчення вкажіть інформацію про себе</h3>
                 <p>Поля з <span>*</span> обов'язкові для заповнення</p>
                <p><label>Ім'я:<span>*</span> <input required type="text" name="name" placeholder="Тарас"></label></p>
-               <p><label>Вік:<span>*</span> <input required type="number" name="age" min="16" max="60" placeholder="20"></label></p>
-               <label>Стать:<span>*</span> <input value="m" type="radio" name="sex" required>Чоловіча</label>
-               <label><input type="radio" value="w" name="sex" required>Жіноча</label>
-               <p><label>Email:<span>*</span> <input required type="email" name="email" placeholder="stopend@gmail.com"></label></p>
-               <p><label>Улюблений колір: <input type="color" name="favcolor" value="#00ff00"></label></p>
-               <p><label>Веб сторінка: <input type="url" name="website" placeholder="https://www.facebook.com"></label></p>
+               <p><label>Вік:<span>*</span> <input required type="number" class="big" name="age" min="16" max="60" placeholder="20"></label></p>
+               <label>Стать:<span>*</span> <input value="m" type="radio" class="big" name="sex" required>Чоловіча</label>
+               <label><input type="radio" value="w" name="sex" class="big" required>Жіноча</label>
+               <p><label>Email:<span>*</span> <input required class="big" type="email" name="email" placeholder="stopend@gmail.com"></label></p>
+               <p><label>Улюблений колір: <input type="color" class="big" name="favcolor" value="#00ff00"></label></p>
+               <p><label>Веб сторінка: <input type="url" class="big" name="website" placeholder="https://www.facebook.com"></label></p>
                </fieldset>
-               <div>
-                   <input type="reset" name="reset">
-                   <input type="submit" name="submit">
+               <div class="but">
+                   <input class="button reset" type="reset" name="reset">
+                   <input class="button submit"  type="submit" name="submit">
                </div> 
        </form>
+       
    </main>
+   <footer>
+        <div class="footer">
+            <span> © Зроблено в Україні</span>
+            <span><time>2017-03-26</time> дата створрення сайту</span>
+        </div>
+        
+</footer>
 </body>
 </html>

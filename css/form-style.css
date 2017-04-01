@@ -2,17 +2,15 @@ html, body {
     margin:0;
     padding:0;
 }
-body {
-    background-image: url("images/sky.png"); 
-    background-size: cover; 
+body { 
     font-family: 'Noto Sans', sans-serif;
 }
 header{
     padding:40px 0;
-    text-align:center;
+    text-align: left;
     font-size: 1.2em;
     color:#001a33;
-    
+    border: 1px solid red;
 }
 header p {
     color:#00284d;
@@ -76,6 +74,8 @@ time {
 footer span {
     color:#000;
 }
-
+#red {
+    color: red;
+}
 
 

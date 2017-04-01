@@ -10,24 +10,19 @@ table {
     margin:20px auto;
     border-collapse:collapse;
 }
-div {
-    margin:50px auto;
+.button {
+    display:block;
     padding:10px;
     border-radius:10px;
     background-color:green;
     width:200px;
-    text-align:center;
-}
-a {
+    margin:50px auto;
     text-decoration:none;
     text-transform:uppercase;
-   
-}
-div a {
+    text-align:center;
     color: white;
-    font-weight:900;
-    
+    font-weight:900;  
 }
 body {
-    background-image:url(/images/hd.jpg);
+    background-color: rgb(177, 181, 85);
 }
